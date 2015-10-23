@@ -2,8 +2,8 @@ name: ELTA_DataScience
 account: jccochran
 server: shinyapps.io
 appId: 65367
-bundleId: 294880
+bundleId: 295453
 url: https://jccochran.shinyapps.io/ELTA_DataScience
-when: 1445554362.23274
+when: 1445613767.88974
 asMultiple: FALSE
 asStatic: FALSE

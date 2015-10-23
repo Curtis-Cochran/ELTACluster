@@ -2,7 +2,8 @@ ELTA with Clustering
 ========================================================
 author: Curtis Cochran  
 date: `r date()`
-autosize: true
+width: 1800
+height: 1200
 
 Introducing ELTA with Clustering
 ========================================================
@@ -19,7 +20,7 @@ You can use ELTA for the following tasks:
 
 Formatting and Removing Columns
 ========================================================
-left: 30%
+left: 40%
 
 Often times column headers have unwanted characters or different cases that need to be cleaned up so that you can code more efficiently or just for cleaner presentation. 
 
@@ -32,12 +33,13 @@ library(RCurl)
 library(foreign)
 library(cluster)
 library(ggplot2)
+library(knitr)
 
 fileurl <- "https://raw.githubusercontent.com/Curtis-Cochran/ELTACluster/master/DSCourse/data/DataScienceExampleFile.csv"
 mydata <- getURL(fileurl)
 mydata <- read.csv(textConnection(mydata))
 
-summary(mydata[,-1])
+summary(mydata[-1])
 
 ```
 

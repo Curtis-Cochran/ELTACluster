@@ -53,14 +53,14 @@ server = (function(input, output) {
   })
   
   
-  observeEvent(input$update, {
-        
-        edit <- df$myupload
-        edit$newcolumn <- edit[,input$varsedit]
-        edit$newcolumn <- sub(input$oldvalue,input$newvalue,edit$newcolumn)
-        df$myupload <- edit
-        
-  })
+  # observeEvent(input$update, {
+  #       
+  #       edit <- df$myupload
+  #       edit$newcolumn <- edit[,input$varsedit]
+  #       edit$newcolumn <- as.character(sub(input$oldvalue,input$newvalue,edit$newcolumn))
+  #       df$myupload <- edit
+  #       
+  # })
   
   observeEvent(input$cluster,{
       
@@ -77,6 +77,8 @@ server = (function(input, output) {
       x <- df$myupload[,ncol(df$myupload)]
       myplot <- qplot(x, data=df$myupload, geom="histogram")
       myplot + scale_x_discrete(x)
+      myplot + xlab("")
+      myplot + ylab("Number")
           
       }
   })
@@ -84,7 +86,8 @@ server = (function(input, output) {
 
   output$myupload_out <- renderDataTable(
          
-        df$myupload[,input$vars]
+        df$myupload
+        #[,input$vars]
         
   )
   

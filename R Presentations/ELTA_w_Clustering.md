@@ -1,8 +1,9 @@
 ELTA with Clustering
 ========================================================
 author: Curtis Cochran  
-date: Fri Oct 23 11:13:32 2015
-autosize: true
+date: Fri Oct 23 11:53:23 2015
+width: 1800
+height: 1200
 
 Introducing ELTA with Clustering
 ========================================================
@@ -19,7 +20,7 @@ You can use ELTA for the following tasks:
 
 Formatting and Removing Columns
 ========================================================
-left: 30%
+left: 40%
 
 Often times column headers have unwanted characters or different cases that need to be cleaned up so that you can code more efficiently or just for cleaner presentation. 
 
