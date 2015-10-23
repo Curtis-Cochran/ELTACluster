@@ -1,0 +1,29 @@
+ELTA with Clustering
+========================================================
+author: Curtis Cochran  
+date: `r date()`
+autosize: true
+
+Introducing ELTA with Clustering
+========================================================
+
+ELTA stands for External Lead Transformation Application. ELTA is ideal if you work in an environment where you have to constantly transform and cleanse data in preparation for use in other applications such as R or for import into other systems. You can use ELTA for the following tasks:
+
+- Formatting Column Headers
+- Removing Columns
+- Editing Column Values
+- Hierchical Clustering for Quick Segmentation (New Feature!)
+
+Formatting and Removing Columns
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
