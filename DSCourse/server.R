@@ -1,5 +1,7 @@
 library(shiny)
 library(dplyr)
+library(ggplot2)
+library(cluster)
 
 server = (function(input, output) {
   df <- reactiveValues(myupload = NULL)
@@ -63,7 +65,7 @@ server = (function(input, output) {
   observeEvent(input$cluster,{
       
       mydaisy <- daisy(df$myupload)
-      hierClusters <- hclust(myDaisy)
+      hierClusters <- hclust(mydaisy)
       myTree <- cutree(hierClusters,input$k)
       df$myupload <- merge(df$myupload,myTree,by="row.names")
       df$myupload <- df$myupload[,-1]
