@@ -3,8 +3,7 @@
 ELTA stands for External Lead Transformation Application. ELTA is ideal if you work in an environment where you have to constantly transform and cleanse data in preparation for use in other applications such as R or for import into other systems. You can use ELTA for the following tasks:
 
 - Formatting Column Headers
-- Removing Unnecessary Columns
-- Editing Column Values
+- Removing Unnecessary Columns and Rows
 - Hierchical Clustering for Quick Segmentation (New Feature!)
 
 In order to use the application, you will need a CSV format with UTF-8 encoding. If you do not have a CSV file handy, you can download an example here: XXXXXXX.
