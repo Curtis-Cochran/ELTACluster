@@ -27,19 +27,13 @@ If you don’t want to keep all of the column headers, then you can delete them 
 
 Note: Once removed, you cannot add the columns back.
 
-####Step 5: Select a Column to Edit Values
-To adjust the values within a column, you can enter your column name in the “Column to Edit” box. This lets ELTA know which column you are adjusting. Be sure to type in the column name exactly as its current state. 
 
-By default, ELTA will create a new column with the changes. If you no longer need the original column after making your edits, you can simply remove it using Step 4.
-
-Next, enter the row value that you would like to update in the “Enter Value to Change” box and the value you want to change it to in the “Enter New Value” box. Click update and you’ll notice a new column called “newcolumn”.  After you’ve made your first update, the “Column to Edit” will default to your newly created column. After that, you can make subsequent value changes to your column. 
-
-####Step 6: Clustering in ELTA
+####Step 5: Clustering in ELTA
 If you wish to cluster your uploaded data you can choose to "Create Clusters" specifying the "Number of Clusters" to create. ELTA will append the cluster to the dataset and plot the latest cluster. If you wish to try another number of clusters, change the "Number of Clusters" and re-click "Create Clusters". 
 
 Note: The plot function always plots the last column in the dataset. If you want to see the plots of other variables in your data set, you can delete columns one at a time and see how each variable is distributed across your dataset. In future releases, ELTA will allow you to add back in columns but for now this feature is purely a by-product of plotting the last column to see the clustering affects.
 
-####Step 7: Download File to CSV
+####Step 6: Download File to CSV
 Now that you have transformed and cleaned your dataset, you can download the file to CSV for user elsewhere.
 To download, enter the name of the CSV file you’d like to create and chose “Download File to CSV”.
 I hope you found ELTA to be intuitive and easy to use.
