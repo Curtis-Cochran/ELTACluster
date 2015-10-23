@@ -16,6 +16,12 @@ server = (function(input, output) {
     
   })
   
+  observeEvent(input$sample, {
+    
+        df$myupload <- read.csv("data/DataScienceExampleFile.csv",encoding="UTF-8")
+    
+  })
+  
       
   output$vars <- renderUI({
                     

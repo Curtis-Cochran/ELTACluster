@@ -4,7 +4,10 @@ shinyUI(
     sidebarLayout(
         sidebarPanel(h3("External Lead Transform App (ELTA)"),width=3,
 
-                fileInput("file", h4("Step 1: Choose a CSV file to Upload.")),
+                fileInput("file", h4('Step 1: Choose a CSV file to Upload
+                                     or click "Upload Sample File"')),
+
+
                 actionButton("sample","Upload Sample File"),
 
                 br(),
@@ -53,7 +56,8 @@ shinyUI(
                 br(),
                 br(),
                 
-                h4("Step 6: Create Cluster"),
+                h4("Step 6: Create Cluster (Note: You must 
+                   upload a file or use the sample file prior to creating clusters)"),
                 actionButton("cluster","Create Clusters"),
                 br(),
                 br(),

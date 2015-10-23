@@ -1,9 +1,10 @@
 ELTA with Clustering
 ========================================================
 author: Curtis Cochran  
-date: Fri Oct 23 11:53:23 2015
+date: Fri Oct 23 12:52:09 2015
 width: 1800
 height: 1200
+transition: rotate
 
 Introducing ELTA with Clustering
 ========================================================
@@ -13,18 +14,17 @@ ELTA stands for External Lead Transformation Application. ELTA is ideal if you w
 You can use ELTA for the following tasks:
 
 - Formatting Column Headers
-- Removing Columns
-- Editing Column Values
+- Removing Columns and Rows
 - Hierchical Clustering for Quick Segmentation (New Feature!)
 
 
-Formatting and Removing Columns
+Formatting and Removing Columns and Rows
 ========================================================
 left: 40%
 
 Often times column headers have unwanted characters or different cases that need to be cleaned up so that you can code more efficiently or just for cleaner presentation. 
 
-You may also want to remove columns that are needed for a particular analysis.
+You may also want to remove columns or rows that are not needed for a particular analysis.
 
 ***
 
@@ -48,23 +48,6 @@ You may also want to remove columns that are needed for a particular analysis.
  (Other)                    : 30                          
 ```
 
-Editing Column Values
-========================================================
-left:30%
-
-![alt text](ELTA.png)
-
-***
-
-If you need to adjust some values within a column, ELTA can help with that too. 
-
-Currently ELTA is designed to adjust a single column where you may have a few typos or want to map string to an integer.  
-
-Making these adjustments are as simply as selecting a column and entering the value you want to change and the value you want to change it too. 
-
-A new column will be created with the new values. Repeat as many times as necessary until you have the column adjusted to your preference. 
-
-
 
 Hierchical Clustering
 ========================================================
@@ -73,9 +56,23 @@ left: 30%
 
 ***
 
-Within ELTA, you can createa hierchical clustering of your data based on inputs that you specify. 
+Within ELTA, you can create a hierchical clustering of your data based on inputs that you specify. 
 
 In this plot, you can see how the observations are distributed across the clusters that were created to get an idea of the size of each of your clusters. 
 
 Additionally, you can download the resulting data set from ELTA so that you can explore the clusters further in R or use to test certain scenarios or predictions.
+
+Summary
+========================================================
+left: 30%
+
+ELTA can simply your transformation and cleansing processes and allow more time for exploration and analysis. 
+
+You can view the application [here](https://jccochran.shinyapps.io/ELTA_DataScience) or find the source files located here: [https://github.com/Curtis-Cochran/ELTACluster](https://github.com/Curtis-Cochran/ELTACluster).
+
+***
+
+![alt text](ELTA.png)
+
+
 
